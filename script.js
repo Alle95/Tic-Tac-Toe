@@ -7,13 +7,13 @@ function startGame() {
     table.style.display = "block";
 }
 
-function appearSighn(id) {
+function playerMove(id) {
     if (turn == 1) {
-    player1.push(Number(id));
-    document.getElementById(id).innerHTML += '<p class ="card-text">X</p>';
-    document.getElementById(id).removeAttribute("onclick");
-    turn = 0;
-    ++moves;
+        player1.push(Number(id));
+        document.getElementById(id).innerHTML += '<p class ="card-text">X</p>';
+        document.getElementById(id).removeAttribute("onclick");
+        turn = 0;
+        ++moves;
     } else {
         player2.push(Number(id));
         document.getElementById(id).innerHTML += '<p class ="card-text">0</p>';
